@@ -1,0 +1,21 @@
+0.2.0 (2023.10.31)
+- Added description how to start project in README
+- Added prettier config
+- Added eslint config
+- Added browsers config
+- Added Docker and description on README
+- Added env file
+- Added react-router-dom package
+- Added breadcrumbs
+- Added home page
+    - Added list with categories
+- Added 404 page
+- Added category items page
+    - Added list with items
+- Added item page
+    - Added carousel with images
+    - Added list YouTube videos
+    - Added table with characteristics
+
+0.1.0 (2023.10.31)
+- Create React App with TypeScript

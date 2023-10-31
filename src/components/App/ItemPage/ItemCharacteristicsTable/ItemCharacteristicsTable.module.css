@@ -1,0 +1,25 @@
+.table_wrapper {
+  width: 100%;
+  overflow-x: scroll;
+  margin: 8px 0;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table tr td {
+  padding: 8px;
+  border: 1px solid black;
+  min-width: 200px;
+}
+
+.table tr td:first-child {
+  width: 240px;
+}
+
+.table_row_with_name td {
+  text-align: center;
+  font-weight: bold;
+}
