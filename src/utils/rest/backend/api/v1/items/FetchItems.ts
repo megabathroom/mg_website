@@ -49,4 +49,25 @@ export default class FetchItems {
 
     throw new HttpException('GET', response);
   }
+
+  static async filterModels(models: string[]) {
+    const url = 'https://de-pa.by/api/v1/items/filter/models';
+    const response = await fetch(url, {
+      method: 'POST',
+      body: JSON.stringify({
+        models,
+      }),
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (response.status === 200) {
+      const json: GetItemDto[] = await response.json();
+      return json;
+    }
+
+    throw new HttpException('POST', response);
+  }
 }

@@ -1,3 +1,13 @@
+0.3.0 (2023.11.17)
+- Added brands page (/products)
+- Added brand page (/products/[brand])
+- Updated categories page (/products/[brand]/[category])
+- Update model page (/products/[brand]/[category]/[model])
+- Added send order page (/products/basket/send-order)
+- Added logic to delete item from basket
+- Added AppButton component
+- Added AppButtonLink component
+
 0.2.0 (2023.10.31)
 - Added description how to start project in README
 - Added prettier config

@@ -1,0 +1,68 @@
+.table__block {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table__block table tr td img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.table__block table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__block table tr td,
+.table__block table tr th {
+  padding: 4px;
+  border: 1px solid black;
+}
+
+.table__td_image {
+  text-align: center;
+  width: 120px;
+}
+
+.table__td_model {
+  text-align-last: left;
+  width: 100px;
+}
+
+.table__td_name {
+  text-align-last: left;
+  width: 600px;
+}
+
+.table__td_count {
+  text-align: right;
+  width: 100px;
+}
+
+.table__td_delete {
+  text-align: center;
+  width: 30px;
+}
+
+.table__td_delete button {
+  background-color: #dc3545;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  padding: 4px;
+  width: 2em;
+  height: 2em;
+  color: white;
+}
+
+.table__td_delete button:hover {
+  background-color: transparent;
+  color: #dc3545;
+}
+
+.send_order_wrapper a {
+  width: calc(100% - 1px * 2 - 8px * 2);
+  border-width: 1px;
+  padding: 8px;
+  text-align: center;
+  margin: 1em 0;
+}

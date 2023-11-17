@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 
-import AppContainer from '../AppContainer';
 import styles from './AppBreadcrumbs.module.css';
+import AppContainer from '../AppContainer/AppContainer';
 
-const Breadcrumbs = () => {
+export default function AppBreadcrumbs() {
   const location = useLocation();
   const [breadcrumbs, setBreadcrumbs] = useState([
     {
@@ -50,6 +50,4 @@ const Breadcrumbs = () => {
       </AppContainer>
     </nav>
   );
-};
-
-export default Breadcrumbs;
+}

@@ -1,9 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
 
-import HomePage from './HomePage';
-import ItemPage from './ItemPage';
-import Error404Page from './Error404Page';
-import CategoryItemsPage from './CategoryItemsPage/CategoryItemsPage';
+import HomePage from '../../pages';
+import Error404Page from '../../pages/404';
+import BasketPage from '../../pages/basket';
+import CategoryPage from '../../pages/products/[brand]/[category]';
+import ModelPage from '../../pages/products/[brand]/[category]/[model]';
+import Brands from '../Brands/Brands';
+import Brand from '../Brand/Brand';
+import SendOrderPage from '../../pages/basket/send-order';
 
 interface IRouter {
   path: string;
@@ -16,12 +20,28 @@ const routes: IRouter[] = [
     element: <HomePage />,
   },
   {
-    path: '/:category',
-    element: <CategoryItemsPage />,
+    path: '/basket',
+    element: <BasketPage />,
   },
   {
-    path: '/:category/:model',
-    element: <ItemPage />,
+    path: '/basket/send-order',
+    element: <SendOrderPage />,
+  },
+  {
+    path: '/products',
+    element: <Brands />,
+  },
+  {
+    path: '/products/:brand',
+    element: <Brand />,
+  },
+  {
+    path: '/products/:brand/:category',
+    element: <CategoryPage />,
+  },
+  {
+    path: '/products/:brand/:category/:model',
+    element: <ModelPage />,
   },
   {
     path: '*',
